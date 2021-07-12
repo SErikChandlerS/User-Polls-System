@@ -30,13 +30,14 @@ cd app
 python3.9 -m venv env
 source env/bin/activate
 docker-compose build
-python manage.py migrate
-python manage.py createsuperuser
 ```
 
 ### Запуск
-docker-compose up -d
 
+````
+docker-compose up -d
+docker-compose exec web python manage.py migrate --noinput
+````
 ## Описание API
 
 См. [API.md](API.md)
