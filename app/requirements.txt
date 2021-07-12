@@ -1,0 +1,5 @@
+Django==3.2.5
+djangorestframework==3.12.4
+psycopg2-binary==2.8.5
+requests==2.22.0
+pytest==6.2.4
