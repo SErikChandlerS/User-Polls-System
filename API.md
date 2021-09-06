@@ -1,14 +1,14 @@
-# Описание API
+# Api description
 
-Все вызовы API принимают и отдают JSON-данные.
+All requests accept json-data.
 
-## Для администратора
+## For administrator
 
-Все вызовы для администратора требуют базовую HTTP-авторизацию.
+All calls to the administrator require basic HTTP authorization.
 
 #### GET /admin/polls
 
-Получение списка всех опросов. Тело ответа:
+Getting a list of all surveys. Response body:
 ```
 [
     {
@@ -24,7 +24,8 @@
 
 #### POST /admin/polls
 
-Создание нового опроса. Тело запроса:
+
+Creating a new survey. Request Body:
 ```
 {
     name,           # Строка
@@ -33,7 +34,7 @@
     finishDate      # Строка YYYY-MM-DD
 }
 ```
-Тело ответа:
+Response body:
 ```
 {
     id, name, description, startDate, finishDate
@@ -42,8 +43,8 @@
 
 #### GET /admin/polls/(id)
 
-Получение подробной информации об одном опросе, с вопросами и ответами.
-Тело ответа:
+Getting detailed information about a single survey, with questions and answers.
+Response body:
 ```
 {
     id, 
@@ -69,11 +70,11 @@
 
 #### DELETE /admin/polls/(id)
 
-Удаление опроса.
+Poll delete.
 
 #### PATCH /admin/polls/(id)
 
-Редактирование опроса. Тело запроса (все поля опциональные):
+Editing the poll. Request body (all fields are optional):
 ```
 {
     name,           # Строка
@@ -81,7 +82,7 @@
     finishDate      # Строка YYYY-MM-DD
 }
 ```
-Формат ответа:
+Response format:
 ```
 {
     id, name, description, startDate, finishDate
@@ -90,7 +91,7 @@
 
 #### POST /admin/polls/(id)/questions
 
-Добавление нового вопроса к опросу id. Тело запроса:
+Adding a new question to the survey id. Request Body:
 ```
 {
     text,           # Текст вопроса
@@ -102,7 +103,7 @@
     ]
 }
 ```
-Тело ответа:
+Response body:
 ```
 {
     id,
@@ -117,7 +118,7 @@
 
 #### GET /admin/polls/(pollId)/questions/(questionId)
 
-Подробная информация об одном вопросе. Тело ответа:
+Detailed information about one question. Response body:
 ```
 {
     id,
@@ -132,11 +133,11 @@
 
 #### DELETE /admin/polls/(pollId)/questions/(questionId)
 
-Удаление вопроса из опроса.
+Deleting a question from the survey.
 
 #### PATCH /admin/polls/(pollId)/questions/(questionId)
 
-Изменение существующего вопроса. Тело запроса (все поля опциональные):
+Edit an existing question. Request body (all fields are optional):
 ```
 {
     text,           # Текст вопроса
@@ -148,7 +149,7 @@
     ]
 }
 ```
-Тело ответа:
+Response body:
 ```
 {
     id,
@@ -166,7 +167,7 @@
 
 #### GET /polls
 
-Получить список активных опросов. Тело ответа:
+Get a list of active surveys. Response body:
 ```
 [
     {
@@ -182,8 +183,8 @@
 
 #### GET /polls/(id)
 
-Получение подробной информации об одном опросе, с вопросами и ответами.
-Тело ответа:
+Getting detailed information about a single survey, with questions and answers.
+Response body:
 ```
 {
     id, 
@@ -208,7 +209,7 @@
 
 #### POST /polls/(pollId)
 
-Прохождение опроса пользователем. Тело запроса:
+Passing the survey by the user. Request Body:
 ```
 {
     userId,     # Идентификатор пользователя
@@ -223,8 +224,9 @@
 
 #### GET /pollsByUser/(userId)
 
-Получить пройденные пользователем опросы, с детализацией выбранных ответов.
-Тело ответа:
+
+Survey completion Get the surveys completed by the user, with details of the selected responses.
+Response body:
 ```
 [
     {
