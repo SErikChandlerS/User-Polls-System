@@ -1,0 +1,4 @@
+Django==2.2.13
+djangorestframework
+requests
+pytest

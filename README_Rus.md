@@ -45,5 +45,5 @@ docker-compose exec web python manage.py migrate --noinput
 
 ## Схема данных
 
-![schema](schema.svg)
+![schema](app/schema.svg)
 ****
