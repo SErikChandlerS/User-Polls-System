@@ -1,6 +1,6 @@
 # User Polls System
 
-## How to up backend 
+## Getting Started
 
 ```
 cd DRF-Poll-Test
