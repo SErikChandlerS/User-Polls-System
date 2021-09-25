@@ -12,7 +12,7 @@ python manage.py createsuperuser
 Creating superuser with login - admin, and password - admin
 This user will be used in unit-tests (tests/settings.py).
 
-### Up server
+### Setup server
 ```
 cd DRF-Poll-Test/backend
 python manage.py runserver
