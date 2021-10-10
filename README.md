@@ -1,6 +1,6 @@
 # User Polls System
 ## Detailed project information
-![Detailed information of project.](https://docs.google.com/document/d/1A799J1TsTdoqfzb9RM6FuLdGwPA2g4mxi-ezcD3aFW0/edit?usp=sharing) It includes information about stakeholders, user stories and other requirements.
+[Detailed information of project.](https://docs.google.com/document/d/1A799J1TsTdoqfzb9RM6FuLdGwPA2g4mxi-ezcD3aFW0/edit?usp=sharing) It includes information about stakeholders, user stories and other requirements.
 ## Getting Started
 
 ```
