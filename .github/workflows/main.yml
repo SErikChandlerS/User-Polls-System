@@ -28,5 +28,3 @@ jobs:
       # Runs a single command using the runners shell
       - name: Super-Linter
         uses: github/super-linter@v4.8.1
-        env: 
-          GITHUB_TOKEN ${{ secrets.GITHUB_TOKEN }}
