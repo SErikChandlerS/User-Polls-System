@@ -6,6 +6,7 @@
 - CRUD REST for candidate on the endpoint: localhost:8000/api/candidate (basic auth required)
 - Vote endpoint: localhost:8000/api/vote (The post request should contain the candidate_name)
 
+[More product details here](https://docs.google.com/document/d/1A799J1TsTdoqfzb9RM6FuLdGwPA2g4mxi-ezcD3aFW0/edit?usp=sharing)
 
 # Technical details
 
