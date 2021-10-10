@@ -35,6 +35,14 @@ Frontend UML
 ![alt text](src.png)
 
 
+Static view
+![alt text](static.png)
+
+Dynamic view
+
+![alt text](dynamic.png)
+
+
 
 
 
