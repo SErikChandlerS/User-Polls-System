@@ -12,6 +12,8 @@
 - Backend with REST APIs using Django Rest Framework
 - Frontend with Vue.js
 
+# Getting Started
+
 ## Running the django application
 - Create a virtual environment (optional)
 - Install dependencies : `pip install -r requirements.txt`
@@ -26,6 +28,8 @@ Run the following comands from `frontend/vote-app`
 
 Look in `frontend/vote-app` for more details on same
 
+## Demo
+[Link](https://youtu.be/K5TJPwyUrw0) to demo video.
 
 
 
