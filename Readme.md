@@ -26,6 +26,14 @@ Run the following comands from `frontend/vote-app`
 
 Look in `frontend/vote-app` for more details on same
 
+## UML diagrams
+
+Backend UML
+![alt text](main.png)
+
+Frontend UML
+![alt text](src.png)
+
 
 
 
