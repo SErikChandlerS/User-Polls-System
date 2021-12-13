@@ -18,6 +18,8 @@
 - Run migration: `python manage.py migrate`
 - Run the server: `python manage.py runsever`
 
+Video presentation: https://youtu.be/MuPDqI7fJ7c
+
 ## Run the vue app
 Run the following comands from `frontend/vote-app`
 
