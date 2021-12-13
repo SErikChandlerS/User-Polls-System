@@ -24,29 +24,14 @@ Run the following comands from `frontend/vote-app`
 - Install dependencies: `yarn install`
 - Run: `yarn serve`
 
+
+## With docker-compose
+- `cd User-Polls-System`
+- `docker-compose up --build`
+
 Look in `frontend/vote-app` for more details on same
 
-##Demo video
-https://youtu.be/K5TJPwyUrw0
 
-## RUP artefact
-https://docs.google.com/document/d/1A799J1TsTdoqfzb9RM6FuLdGwPA2g4mxi-ezcD3aFW0/edit#heading=h.35nkun2
-
-## UML diagrams
-
-Backend UML
-![alt text](main.png)
-
-Frontend UML
-![alt text](src.png)
-
-
-Static view
-![alt text](static.png)
-
-Dynamic view
-
-![alt text](dynamic.png)
 
 
 
