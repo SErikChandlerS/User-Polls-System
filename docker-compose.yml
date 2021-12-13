@@ -14,7 +14,7 @@ services:
   django:
     build:
       context: .
-      dockerfile: docker/BackendDockerfile
+      dockerfile: ../../../PycharmProjects/User-Polls-System/docker/BackendDockerfile
     container_name: backend
     command: ./docker/backend_setup.sh
     environment:
@@ -31,7 +31,7 @@ services:
   vue:
     build:
       context: .
-      dockerfile: docker/FrontendDockerfile
+      dockerfile: ../../../PycharmProjects/User-Polls-System/docker/FrontendDockerfile
     container_name: frontend
     command: ./docker/frontend_setup.sh
     volumes:

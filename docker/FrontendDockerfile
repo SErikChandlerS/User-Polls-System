@@ -1,6 +1,0 @@
-FROM node:11.11.0-stretch
-COPY . /app
-WORKDIR /app
-EXPOSE 8000
-
-RUN npm install
