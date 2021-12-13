@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+  db:
+    image: postgres
+    container_name: db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+  django:
+    build:
+      context: .
+      dockerfile: docker/BackendDockerfile
+    container_name: backend
+    command: ./docker/backend_setup.sh
+    environment:
+      POSTGRES_NAME: postgres
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_HOST: db
+    volumes:
+      - .:/app
+    ports:
+      - "8002:8000"
+    depends_on:
+      - db
+  vue:
+    build:
+      context: .
+      dockerfile: docker/FrontendDockerfile
+    container_name: frontend
+    command: ./docker/frontend_setup.sh
+    volumes:
+      - .:/app
+    ports:
+      - "8082:8080"
+    depends_on:
+      - django

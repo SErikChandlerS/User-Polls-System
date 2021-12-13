@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+job_deploy:
+  stage: deploy
+  script:
+    - docker-compose up --build
+  only:
+    - master
